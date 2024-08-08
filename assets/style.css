@@ -203,6 +203,12 @@ transform: scaleX(1);
     animation-delay: 20s;
   }
 
+  @media screen and (max-width: 850px) {
+      .pic-ctn {
+          display: none;
+      }
+  }
+
   @media screen and (max-width: 1100px) {
     .face { 
       display: none;
@@ -214,6 +220,13 @@ transform: scaleX(1);
       height: 350px !important;
       margin-top: 5.5rem !important;
     }
+  }
+
+  @media screen and (max-width: 1520px) {
+      .face {
+          height: 400px !important;
+          margin-top: 6rem !important;
+      }
   }
 
   @media screen and (max-width: 1750px) {
