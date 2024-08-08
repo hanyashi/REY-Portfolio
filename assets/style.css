@@ -225,7 +225,7 @@ transform: scaleX(1);
   @media screen and (max-width: 1520px) {
       .face {
           height: 400px !important;
-          margin-top: 6rem !important;
+          margin-top: 4rem !important;
       }
   }
 
