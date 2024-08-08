@@ -1,0 +1,262 @@
+body {
+    font-family: "Montserrat", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(254, 145, 254);
+    visibility: hidden;
+    cursor: default;
+}
+
+.header {
+    padding-top: 15rem;
+    padding-left: 25rem;
+}
+.socials-header {
+  padding-left: 25rem;
+}
+.header-list {
+    padding-left: 25rem;
+}
+
+.link {
+    text-decoration: underline rgba(0, 0, 0, 0);
+    font-style: normal;
+    color: black;
+    position: relative;
+    transition: all 0.5s;
+}
+
+/* .link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #751475;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.link:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+} */
+
+.link:hover {
+  color: #751475;
+  text-decoration-color: #751475;
+  text-shadow: 0 0 5px #e07979;
+}
+
+.link:focus {
+  color: #751475;
+  text-shadow: 0 0 5px #e07979;
+}
+
+#sample-website {
+  text-decoration: underline;
+}
+
+#sample-website:hover {
+  font-style: normal;
+}
+
+
+.face {
+    float: right;
+    height: 500px;
+    margin-right: 25rem;
+    margin-top: 5rem;
+    border-radius: 100%;
+}
+
+#face2 {
+  height: 350px;
+  margin-top: 2.5rem;
+  animation: fadeInLeft ease 1s;
+  animation-fill-mode: forwards;
+}
+
+.div-student {
+    background-color: #e07979;
+}
+
+.socials img {
+  width: 75px;
+  margin-right: 40px;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.socials img:hover {
+  background-color: #e07979;
+  color: rgb(117, 20, 117);
+  box-shadow: 0 0 50px #e07979;
+}
+
+
+
+#fade-in-animation {
+    animation: fadeInLeft ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#fade-in-animation-right {
+  animation: fadeInRight ease 0.7s;
+  animation-fill-mode: forwards;
+}
+
+#name-hover {
+  cursor: default;
+  text-decoration: underline;
+  color: rgb(117, 20, 117);
+  text-shadow: 0 0 5px #e07979;
+}
+
+@keyframes fadeInLeft {
+    0% { 
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+  0% { 
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.pic-ctn {
+    width: 50vw;
+  }
+#vertical {
+  width: 23vw;
+  height: 35vw;
+  margin-left: 5rem;
+  margin-top: -4rem;
+}
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+  
+  .carousel-showcase {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    float: right;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    margin-left: 7.5rem;
+  }
+  
+  .carousel-showcase > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 25s infinite;
+    border-radius: 1%;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 5s;
+  }
+  img:nth-child(3) {
+    animation-delay: 10s;
+  }
+  img:nth-child(4) {
+    animation-delay: 15s;
+  }
+  img:nth-child(5) {
+    animation-delay: 20s;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .face { 
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1330px) {
+    .face { 
+      height: 350px !important;
+      margin-top: 5.5rem !important;
+    }
+  }
+
+  @media screen and (max-width: 1750px) {
+    .face {
+        height: 500px;
+        margin-top: 1rem;
+        margin-right: 15rem;
+    }
+    .header {
+        padding-top: 5rem;
+        padding-left: 15rem;
+    }
+    .header-list {
+        padding-left: 15rem;
+    }
+    .pic-ctn {
+        height: 300px;
+        width: 600px;
+    }
+    .carousel-showcase {
+        margin-left: 15rem;
+        margin-top: 8rem;
+        width: 50%;
+    }
+    .socials-header {
+      padding-left: 15rem;
+    }
+}
+
+@media screen and (min-width: 1751px) {
+    .face {
+        height: 500px;
+        margin-top: 0rem;
+        margin-right: 25rem;
+    }
+    .header {
+        padding-top: 10rem;
+        padding-left: 25rem;
+    }
+    .header-list {
+        padding-left: 25rem;
+    }
+    .carousel-showcase {
+        margin-top: 5rem;
+    }
+}

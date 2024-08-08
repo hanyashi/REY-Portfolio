@@ -1,0 +1,4 @@
+to do:
+- fix formatting for index page template
+- make it so that text appears as you click buttons respectively
+- alternatively, create new designs for student design etc etc
